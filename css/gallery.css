@@ -1,0 +1,36 @@
+body
+{
+    background-image: url('../img/galaxySky.jpg');
+
+}
+
+h1
+{
+    text-align: center;
+}
+
+.imageRow
+{
+    width: 900px;
+    clear: both;
+    margin: auto;
+    padding-left: 20px;
+    display: block;
+}
+
+.indIMG
+{
+    height: 100%;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word;
+    margin: auto 10px;
+}
+
+.galIMG
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

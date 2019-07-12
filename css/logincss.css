@@ -1,0 +1,48 @@
+/* Navbar */
+.bottombar
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: orange;
+    overflow-x: hidden;
+}
+  
+/* Nav links */
+.bottombar a
+{
+    padding: 6px 8px 6px 16px;
+	text-decoration: none;
+    font-size: 25px;
+    color: gold;
+    display: inline-block;
+}
+  
+.bottombar a:hover
+{
+    color: pink;
+}
+
+/* Flash class and keyframe animation */
+.flashit
+{
+  color:pink;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash
+{
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+@keyframes flash
+{
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}

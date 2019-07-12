@@ -1,0 +1,29 @@
+/* The sidebar menu */
+.rightbar
+{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Nav links */
+.rightbar a
+{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gold;
+    display: block;
+}
+
+.rightbar a:hover
+{
+    color: pink;
+}
+

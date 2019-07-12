@@ -1,0 +1,46 @@
+/* Navbar */
+.navbar
+{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    overflow-x: hidden;
+}
+  
+/* Nav links */
+.navbar a
+{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gold;
+    display: inline-block;
+}
+  
+.navbar a:hover
+{
+    color: pink;
+}
+
+/* Page content */
+.main
+{
+    margin-top: 50px;
+    padding: 0px 10px;
+}
+
+#rando-image
+{
+    float: right;
+    margin-top: -275px;
+    margin-right: 200px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
