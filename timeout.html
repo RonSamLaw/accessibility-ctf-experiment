@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Dun. Dun. Dun dun... dunun</title>
+        <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/timeout.css"/>
+    </head>
+    <body onload="clock = setInterval(timer, 3000); error = setInterval(boom, 10000);">
+        <audio loop id="bell">
+                <source src="media/service-bell.ogg" type="audio/ogg"/>
+                <source src="media/service-bell.mp3" type="audio/mpeg"/>
+        </audio>
+        <script>
+            var audio = document.getElementById("bell");
+            audio.play();
+
+            function timer()
+            {
+                var newWindow = window.open("", "newWindow", "width=200, height=100");
+                newWindow.document.write("<p>You failed to find the button in time.</p>");
+                setTimeout(function(){ newWindow.close() }, 2000);
+            }
+
+            function boom()
+            {
+                alert("You didn't click the correct image. :(");
+            }
+                
+            function pauseBell()
+            {
+                audio.pause();
+            }
+        </script>
+        <!-- Navbar -->
+        <div class="unformatted">
+            <a href="home.html">Hm</a>
+            <a href="hints.html">Hnts</a>
+            <a href="form.html">Frm</a>
+            <a href="login.html">Sn Up</a>
+            <a href="#">nsr ky</a>
+        </div>
+
+        <!-- Main -->
+        <p>
+            If you don't want things to happen, press the gld stp bttn. It is not italicized. Qck!
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining <button onclick="clearTimeout(clock)">essentially</button> unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <br>
+        <hr>
+        <br>
+        <div id="orientation">
+            <h3>Which img looks the most nrml? Clicking that img will stp the alrt.</h3>
+            <img src="img/right-way.jpeg" id="skewDown" alt=""/>
+            <img src="img/right-way.jpeg" alt="" onclick="clearTimeout(error)"/>
+            <img src="img/right-way.jpeg" id="skewLeft" alt=""/>
+            <img src="img/right-way.jpeg" id="ninetyLeft" alt=""/>
+            <img src="img/right-way.jpeg" id="skewUp" alt=""/>
+            <img src="img/right-way.jpeg" id="upsideDown" alt=""/>
+            <img src="img/right-way.jpeg" id="backwards" alt=""/>
+            <img src="img/right-way.jpeg" id="skewRight" alt=""/>
+            <img src="img/right-way.jpeg" id="ninetyRight" alt=""/>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <h3>Click the img that is shpd like a trngl.</h3>
+            <div id="circle" class="shape"></div>
+            <div id="square" class="shape"></div>
+            <div id="hexagon" class="shape"></div>
+            <div id="star" class="shape"></div>
+            <div id="oval" class="shape"></div>
+            <div id="triangle" class="shape" onclick="pauseBell()"></div>
+            <div id="trapezoid" class="shape"></div>
+            <div id="rectangle" class="shape"></div>
+            <div id="pentagon" class="shape"></div>
+        </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,224 @@
+body
+{
+    background-color: green;
+    color: yellow;
+}
+
+button
+{
+    background:none;
+    color:gold;
+    font: inherit;
+    font-style: normal;
+    border:none; 
+    padding:0!important;
+}
+
+#orientation img
+{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 25px;
+}
+
+#upsideDown
+{
+    transform: rotate(180deg);
+}
+
+#backwards
+{
+    transform: rotateY(180deg);
+}
+
+#ninetyRight
+{
+    transform: rotate(90deg);
+}
+
+#ninetyLeft
+{
+    transform: rotate(270deg);
+}
+
+#skewUp
+{
+    transform: skewY(160deg);
+}
+
+#skewDown
+{
+    transform: skewY(20deg);
+}
+
+#skewLeft
+{
+    transform: skewX(30deg);
+}
+
+#skewRight
+{
+    transform: skewX(150deg);
+}
+
+.shape
+{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 15px;
+    float: left;
+}
+
+#triangle
+{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+#square
+{
+    background-color: gray;
+}
+
+#circle
+{
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+#rectangle
+{
+    width: 200px;
+    background-color: beige;
+}
+
+/*Pentagon*/
+#pentagon
+{
+    position: relative;
+    width: 71px;
+    box-sizing: content-box;
+    border-width: 66px 23px 0;
+    border-style: solid;
+    border-color: purple transparent;
+    margin-top: 50px;
+}
+
+#pentagon:before
+{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -112px;
+    left: -24px;
+    border-width: 0 59px 46px;
+    border-style: solid;
+    border-color: transparent transparent purple; 
+}
+/*End Pentagon*/
+
+/*Hexagon*/
+#hexagon
+{
+    width: 100px;
+    height: 55px;
+    margin-top: 35px;
+    background: yellowgreen;
+    position: relative;
+}
+
+#hexagon:before
+{
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid yellowgreen;
+}
+#hexagon:after
+{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid yellowgreen;
+}
+/*End Hexagon*/
+
+#oval
+{
+    width: 160px;
+    height: 90px;
+    background: red;
+    border-radius: 100px / 50px;
+}
+
+/*Star*/
+#star
+{
+    margin: 45px 0;
+    position: relative;
+    display: block;
+    color: gold;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid gold;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+}
+
+#star:before
+{
+    border-bottom: 40px solid gold;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22.55px;
+    left: -32.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+#star:after
+{
+    position: absolute;
+    display: block;
+    color: gold;
+    top: 1.5px;
+    left: -52.5px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid gold;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+/*End Star*/
+
+#trapezoid
+{
+    border-bottom: 75px solid blue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 26px;
+    width: 100px;
+}
