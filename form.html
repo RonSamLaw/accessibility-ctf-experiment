@@ -6,6 +6,16 @@
         <link rel="stylesheet" type="text/css" href="css/formpdf.css"/>
     </head>
     <body>
+        <script>
+            function openWin()
+            {
+                var newWindow = window.open("", "newWindow", "width=200, height=100");
+                newWindow.document.write("<p>An wild, unexpected window appears!</p>");
+                setTimeout(function(){ newWindow.close() }, 9000);
+            }
+                
+        </script>
+                    
         <!-- Right Navbar -->
         <div class="rightbar">
             <a href="home.html">Home</a>
@@ -43,7 +53,7 @@
             </div>
         </div>
         <br>
-        <button type="button" aria-label="Click to progress" onclick="alert('Success')">Press for sparkles</button>
+        <button type="button" aria-label="Click to progress" onclick="alert('Success'); openWin()">Press for sparkles</button>
 
         <!-- Footer -->
         <footer>
